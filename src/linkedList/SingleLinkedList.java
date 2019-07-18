@@ -72,8 +72,8 @@ public class SingleLinkedList {
 	}
 
 
-	public boolean existsLinkedList() {
-		// if head is not null retrun true otherwise return false
+	private boolean existsLinkedList() {
+		// if head is not null return true otherwise return false
 		return head != null;
 	}
 
@@ -126,7 +126,6 @@ public class SingleLinkedList {
 	public void deletionOfNode(int location) {
 		if (!existsLinkedList()) {
 			System.out.println("The linked list does not exist!!");// Linked List does not exists
-			return;
 		} else if (location == 0) { // we want to delete first element
 			head = head.getNext();
 			setSize(getSize()-1);
