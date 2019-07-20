@@ -18,12 +18,14 @@ public class QueueByArray {
     public void enQueue(int value) {
         if (isQueueFull()) {
             System.out.println("Queue overflow error!!");
-        } else if (isQueueEmpty()) { //If the queue is empty then we need to initialize beginning index
+        } else if (isQueueEmpty()) {
+            //If the queue is empty then we need to initialize beginning index
             beginningOfQueue = 0;
             topOfQueue++;
             arr[topOfQueue] = value;
             System.out.println("Successfully inserted " + value + " in the queue");
-        } else { //if the queue already has some elements in it then no need to initialize beginning index
+        } else {
+            //if the queue already has some elements in it then no need to initialize beginning index
             topOfQueue++;
             arr[topOfQueue] = value;
             System.out.println("Successfully inserted " + value + " in the queue");
@@ -32,7 +34,7 @@ public class QueueByArray {
     }
 
 
-    public void printQueue() {
+    private void printQueue() {
         if (!isQueueEmpty()) {
             System.out.println("Queue now ...");
             for (int i = beginningOfQueue; i <= topOfQueue; i++) {
@@ -51,7 +53,8 @@ public class QueueByArray {
             System.out.println("Dequeing value from Queue...");
             System.out.println("Dequeued: " + arr[beginningOfQueue] + " from queue");
             beginningOfQueue++;
-            if (beginningOfQueue > topOfQueue) { //If last element in the Queue is Dequeued
+            if (beginningOfQueue > topOfQueue) {
+                //If last element in the Queue is Dequeued
                 beginningOfQueue = topOfQueue = -1;
             }
         }
