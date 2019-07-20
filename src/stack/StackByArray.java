@@ -38,7 +38,7 @@ public class StackByArray {
 	
 	private boolean isEmptyStack() {
 		//if top pointer is zero, the stack is empty
-		return topOfStack == -1)
+		return topOfStack == -1;
 	}
 	
 	
