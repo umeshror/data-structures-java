@@ -160,7 +160,7 @@ public class DoubleCircularLinkedList {
 			tail = null;
 			System.out.println("Linked List deleted successfully !");
 		}
-	}//end of method
+	}
 
 	
 	// Searching a specified value in linked list
@@ -211,7 +211,8 @@ public class DoubleCircularLinkedList {
 				tail.setNext(head);
 				head.setPrev(tail);
 				setSize(getSize() - 1);
-			} else { // if any inside node is to be deleted
+			} else {
+				// if any inside node is to be deleted
 				DoubleNode tempNode = head;
 				for (int i = 0; i < location - 1; i++) {
 					tempNode = tempNode.getNext(); // we need to traverse till we find the location
@@ -219,8 +220,8 @@ public class DoubleCircularLinkedList {
 				tempNode.setNext(tempNode.getNext().getNext()); // delete the required node
 				tempNode.getNext().setPrev(tempNode);
 				setSize(getSize() - 1);
-			} // end of else
+			} 
 
-		}// end of method
+		}
 
-}//end of class
+}
