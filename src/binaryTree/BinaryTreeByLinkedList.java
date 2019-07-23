@@ -38,8 +38,8 @@ public class BinaryTreeByLinkedList {
 			} else {
 					queue.add(presentNode.getLeft());
 					queue.add(presentNode.getRight());
-			}//end of else-if
-		}//end of loop
+			}
+		}
 	}
 
 	
@@ -58,7 +58,7 @@ public class BinaryTreeByLinkedList {
 				if (presentNode.getRight()!=null)
 				queue.add(presentNode.getRight());
 			}
-		}//end of loop	
+		}	
 		System.out.println("Value-"+value+" is not found in Tree !");
 	}
 
@@ -81,7 +81,7 @@ public class BinaryTreeByLinkedList {
 				if (presentNode.getRight() != null)
 					queue.add(presentNode.getRight());
 			}
-		}//end of while loop
+		}
 		System.out.println("Did not find the node!!");
 	}
 	
@@ -103,7 +103,7 @@ public class BinaryTreeByLinkedList {
 			}
 			queue.add(presentNode.getLeft());
 			queue.add(presentNode.getRight());
-		}//end of while loop
+		}
 	}
 
 	
