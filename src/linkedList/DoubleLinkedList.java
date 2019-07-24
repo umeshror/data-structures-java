@@ -171,8 +171,8 @@ public class DoubleLinkedList {
 			tempNode.setNext(tempNode.getNext().getNext()); // delete the required node
 			tempNode.getNext().setPrev(tempNode);
 			setSize(getSize() - 1);
-		} // end of else
+		}
 
-	}// end of method
+	}
 
-}//end of class
+}
