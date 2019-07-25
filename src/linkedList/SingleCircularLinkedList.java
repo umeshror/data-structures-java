@@ -184,6 +184,6 @@ public class SingleCircularLinkedList {
 			setSize(getSize()-1);
 		}//end of else	
 		
-	}//end of method
+	}
 
 }//end of class
