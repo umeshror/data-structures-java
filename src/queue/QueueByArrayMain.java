@@ -23,6 +23,6 @@ public class QueueByArrayMain {
 		System.out.println("Deleting the entire Queue...");
 		queue.deleteQueue();
 
-	}// end of method
+	}
 
-}// end of class
+}
