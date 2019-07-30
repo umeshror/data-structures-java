@@ -14,6 +14,10 @@ public class GraphNode {
 		this.index = index;
 	}
 
+	public GraphNode(String name) {
+		this.name = name;
+	}
+
 	public String getName() {
 		return name;
 	}
@@ -52,10 +56,6 @@ public class GraphNode {
 
 	public void setParent(GraphNode parent) {
 		this.parent = parent;
-	}
-
-	public GraphNode(String name) {
-		this.name = name;
 	}
 
 	@Override
