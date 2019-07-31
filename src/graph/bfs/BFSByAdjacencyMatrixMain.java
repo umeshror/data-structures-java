@@ -1,4 +1,4 @@
-package bfs;
+package graph.bfs;
 
 import java.util.ArrayList;
 
@@ -37,7 +37,7 @@ public class BFSByAdjacencyMatrixMain {
         graph.addUndirectedEdge(8, 9);
         graph.addUndirectedEdge(9, 10);
 
-        //bfs from v1
+        //graph.bfs from v1
         System.out.println("Printing BFS from source: V1");
         graph.bfs();
     }

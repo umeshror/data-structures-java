@@ -1,4 +1,4 @@
-package bfs;
+package graph.bfs;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -19,7 +19,7 @@ public class BFSByAdjacencyMatrix {
 
     //BFS Algorithm
     void bfs() {
-        for (GraphNode node : nodeList) { //if a node is unvisited then run bfs on it
+        for (GraphNode node : nodeList) { //if a node is unvisited then run graph.bfs on it
             if (!node.isVisited())
                 bfsVisit(node);
         }
