@@ -1,4 +1,4 @@
-package dfs;
+package graph.dfs;
 import java.util.ArrayList;
 import node.GraphNode;
 
@@ -31,7 +31,7 @@ public class DFSRecursiveMain {
 		graph.addUndirectedEdge(8,9);
 		graph.addUndirectedEdge(9,10);
 		
-		//dfs from v1
+		//graph.topological.dfs from v1
 		System.out.println("Printing DFS from source: V1");
 		graph.dfs();
 	}

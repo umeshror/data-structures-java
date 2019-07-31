@@ -1,4 +1,4 @@
-package dfs;
+package graph.dfs;
 import java.util.ArrayList;
 import node.GraphNode;
 
@@ -12,7 +12,7 @@ public class DFSRecursive {
 	
 	
 	void dfs() {
-		//if a node is unvisited then run dfs on it
+		//if a node is unvisited then run graph.topological.dfs on it
 		for(GraphNode node: nodeList) {
 			if(!node.isVisited())
 				dfsVisit(node);
@@ -20,7 +20,7 @@ public class DFSRecursive {
 	}
 	
 	
-	//dfs traversal by a source node
+	//graph.topological.dfs traversal by a source node
 	void dfsVisit(GraphNode node) {
 		//mark node as visited
 		node.setVisited(true);
@@ -30,7 +30,7 @@ public class DFSRecursive {
 		for(GraphNode neighbor: node.getNeighbors()) {
 			//if neighbor is not visited 
 			if(!neighbor.isVisited()) {
-				//recursive call to dfs function
+				//recursive call to graph.topological.dfs function
 				dfsVisit(neighbor);
 			}
 		}
@@ -50,5 +50,5 @@ public class DFSRecursive {
 		first.getNeighbors().add(second);
 		second.getNeighbors().add(first);
 	}
-	
+
 }
