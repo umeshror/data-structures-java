@@ -3,7 +3,7 @@ package stack;
 public class StackByArray {
 	
 	private int[] arr;
-	private int topOfStack;//keeps track of the cell which is last occupied in Array, this will help in insertion/deletion
+	private int topOfStack; //keeps track of the cell which is last occupied in Array, this will help in insertion/deletion
 
 	
 	public StackByArray(int size) {
