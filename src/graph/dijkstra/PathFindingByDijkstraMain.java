@@ -13,7 +13,17 @@ public class PathFindingByDijkstraMain {
 		
 		//Constructor
 		PathFindingByDijkstra graph = new PathFindingByDijkstra(nodeList);
-		
+		/*
+              3
+		 A <——————--B(in - infinte)
+		 |  \  	   /\  |˜˜
+		 |6   \6    |1   \ 4
+		 |      \   |       E  (0)
+		\/   1   _\ |     /2
+		 C<——————---D |__
+		 C ——————-->D
+            2
+		 */
 		graph.addWeightedEdge(1,3,6); //Add A-> C , weight 6
 		graph.addWeightedEdge(1,4,3); //Add A-> D , weight 3
 		graph.addWeightedEdge(2,1,3); //Add B-> A , weight 3
