@@ -1,6 +1,6 @@
 package divideConquer.fibonacci;
 
-public class Fibonacci_DC {
+public class Fibonacci{
 
     public int CalculateFibonacci(int n) {
         if (n < 1) {
@@ -17,7 +17,7 @@ public class Fibonacci_DC {
 
 
     public static void main(String[] args) {
-        Fibonacci_DC fib = new Fibonacci_DC();
+        Fibonacci fib = new Fibonacci();
         System.out.println("5th Fibonacci is ---> " + fib.CalculateFibonacci(5));
         System.out.println("6th Fibonacci is ---> " + fib.CalculateFibonacci(6));
     }
