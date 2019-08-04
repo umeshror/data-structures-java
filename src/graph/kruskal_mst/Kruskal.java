@@ -47,7 +47,17 @@ public class Kruskal {
 
     // add a weighted undirected edge between two nodes
     public void addWeightedUndirectedEdge(int firstIndex, int secondIndex, int weight) {
-
+        /*
+                           5
+                    B—————-------—D
+             15 /   |           / |
+               /    |        /    |
+             A      | 13   / 10   |8
+                \   |    /        |
+                20\ |  /          |
+                    C——————-------E
+                            6
+         */
 
         UndirectedEdge edge = new UndirectedEdge(nodeList.get(firstIndex - 1), nodeList.get(secondIndex - 1), weight);
         WeightedNode first = edge.getFirst();
