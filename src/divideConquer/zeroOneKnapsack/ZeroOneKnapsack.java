@@ -8,6 +8,7 @@ package divideConquer.zeroOneKnapsack;
 
 public class ZeroOneKnapsack {
 
+    
     public int knapsack(int[] profits, int[] weights, int capacity) {
         return this.knapsackAux(profits, weights, capacity, 0);
     }
@@ -24,7 +25,7 @@ public class ZeroOneKnapsack {
         int profit2 = knapsackAux(profits, weights, capacity, currentIndex + 1); // Not taking current element
         return Math.max(profit1, profit2);
     }
-
+    
 
     public static void main(String[] args) {
         ZeroOneKnapsack ks = new ZeroOneKnapsack();
