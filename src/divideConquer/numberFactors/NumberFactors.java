@@ -9,6 +9,13 @@ public class NumberFactors {
 			return 1; //
 		if (n == 3)
 			return 2; // {1,1,1}, {3}
+		// step 1 : 	  		  7-1, 	 						  7-3,   			7-4
+		// step 2 : 		(6-1, 6-3, 6-4),				(4-1, 4-3, 4-4), 		 2   ===  (3-1, 3-3, 3-4) == but it will return 2 line no.11
+		// step 3 : (5-1, 5-3, 5-4), (4-1, 4-3, 4-4), 2 	 3, 1, 1				2
+		// step 3 :  (4, 2, 1 ),      (3, 1, 0), 	 2 	     3, 1, 1				2
+		// step 3 :   4, 1, 1  ,      2,  1, 1 , 	 2 	     3, 1, 1				2
+		// step 4 :   (3,1,0), 1, 1  ,      2,  1, 1 , 	 2 	     3, 1, 1				2
+		// step 4 :   2, 1, 1, 1, 1  ,      2,  1, 1 , 	 2 	     3, 1, 1				2
 
 		int subtract1 = waysToGetN(n - 1); // if we subtract 1, we will be left with 'n-1'
 		int subtract3 = waysToGetN(n - 3); // if we subtract 3, we will be left with 'n-3'
