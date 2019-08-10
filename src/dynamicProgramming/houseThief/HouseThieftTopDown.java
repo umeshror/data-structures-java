@@ -1,4 +1,4 @@
-package dynamicProgramming.HouseThief;
+package dynamicProgramming.houseThief;
 
 public class HouseThieftTopDown {
 
