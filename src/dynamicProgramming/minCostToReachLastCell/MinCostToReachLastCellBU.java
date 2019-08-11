@@ -17,7 +17,7 @@ public class MinCostToReachLastCellBU {
             }
         }//end of loop
         return dp[row][col];
-    } // end of method
+    }
 
 
     public static void main(String[] args) {
@@ -31,5 +31,5 @@ public class MinCostToReachLastCellBU {
                 };
         MinCostToReachLastCellBU mctrlc = new MinCostToReachLastCellBU();
         System.out.print("The minimum cost is " + mctrlc.findMinCost(array, array.length, array[0].length));
-    }// end of method
-}//end of class
+    }
+}
