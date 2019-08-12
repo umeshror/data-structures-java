@@ -45,6 +45,7 @@ public class NumberOfPathsToReachLastCellTD {
                 {3, 2, 1, 2},
                 {7, 1, 6, 3}};
         int cost = 25;
+        
         NumberOfPathsToReachLastCellTD nop = new NumberOfPathsToReachLastCellTD();
         System.out.println("Total paths with cost " + cost + " are " + nop.numberOfPaths(array, array.length - 1, array[0].length - 1, cost));
     }
