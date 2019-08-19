@@ -58,17 +58,7 @@ public class DirectChaining {
 	
 
 	
-	//Delete key from HashTable
-	public void deleteKeyFromHashTable(String stringToBeDeleted) {
-		int newIndex = simpleASCIIHashFunction(stringToBeDeleted, hashTable.length);
-		if (hashTable[newIndex] != null && hashTable[newIndex].contains(stringToBeDeleted)) {
-			System.out.println("\n" + "\"" + stringToBeDeleted + "\"" + " has been found in HashTable." );
-			hashTable[newIndex].remove(stringToBeDeleted);
-			System.out.println("\"" + stringToBeDeleted + "\"" + " has been deleted from HashTable !" );
-		}else {
-			System.out.println("\nCould not find " + "\"" + stringToBeDeleted + "\"" + " in HashTable");
-		}
-	}
+
 
 
 		
