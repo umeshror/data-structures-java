@@ -22,7 +22,6 @@ public class DirectChaining {
 		// System.out.println("Index from hashfunction: " + sum % M);
 		return sum % M;
 	}
-
 	
 	
 	//Insert Key in HashTable
@@ -42,7 +41,6 @@ public class DirectChaining {
 		}
 	}
 
-	
 		
 	//Search for a given key in hashTable
 	public boolean searchKeyInHashTable(String stringToBeSearched) {
@@ -57,7 +55,7 @@ public class DirectChaining {
 	}
 	
 
-		//Delete key from HashTable
+	//Delete key from HashTable
 	public void deleteKeyFromHashTable(String stringToBeDeleted) {
 		int newIndex = simpleASCIIHashFunction(stringToBeDeleted, hashTable.length);
 		if (hashTable[newIndex] != null && hashTable[newIndex].contains(stringToBeDeleted)) {
@@ -69,9 +67,7 @@ public class DirectChaining {
 		}
 	}
 
-
-
-		
+	
 	// display the hash table
 	public void displayHashTable() {
 		if(hashTable == null) {
