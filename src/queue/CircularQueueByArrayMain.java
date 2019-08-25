@@ -19,7 +19,6 @@ public class CircularQueueByArrayMain {
 		queue.deQueue();
 		queue.printArray();
 		queue.deleteStack();
-
 	}
 
 }
