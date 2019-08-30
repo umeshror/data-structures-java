@@ -17,6 +17,7 @@ public class CoinChangeProblem {
             int coinValue = coins[index];
             index--;
             int maxAmount = (N / coinValue) * coinValue;
+         
             if (maxAmount > 0) {
                 System.out.println("Coin value: " + coinValue + " taken count: " + (N / coinValue));
                 N = N - maxAmount;
