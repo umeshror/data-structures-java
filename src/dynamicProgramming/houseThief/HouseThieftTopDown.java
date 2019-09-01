@@ -29,3 +29,4 @@ public class HouseThieftTopDown {
 		System.out.println(ht.maxMoney(HouseNetWorth));
 	}
 }
+
