@@ -64,5 +64,4 @@ public class BinaryTreeByLinkedListMain {
 		tree.deleteTree();
 				
 	}
-
 }
