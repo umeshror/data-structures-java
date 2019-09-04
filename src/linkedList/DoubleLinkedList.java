@@ -153,6 +153,7 @@ public class DoubleLinkedList {
 				setSize(getSize() - 1);
 			}
 		} else if (location >= getSize()) { // If location is not in range or equal, then delete last node
+			
 			DoubleNode tempNode = tail.getPrev(); // temp node points to 2nd last node
 			if (tempNode == head) { // if this is the only element in the list
 				tail = head = null;
